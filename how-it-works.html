@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works | Laso Patch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .step-card {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin-bottom: 5rem;
+        }
+        .step-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .step-number {
+            font-size: 5rem;
+            font-family: var(--font-serif);
+            color: rgba(230, 179, 37, 0.3);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        .step-image {
+            flex: 1;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(61, 90, 46, 0.1);
+        }
+        .step-image img {
+            width: 100%;
+            display: block;
+            transition: var(--transition);
+        }
+        .step-image:hover img {
+            transform: scale(1.05);
+        }
+        .step-content {
+            flex: 1;
+        }
+        .step-content h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 768px) {
+            .step-card, .step-card:nth-child(even) {
+                flex-direction: column;
+                gap: 2rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div><i class="fa-solid fa-leaf"></i> 100% Biodegradable & Natural Healing</div>
+            <div><i class="fa-solid fa-location-dot"></i> Available Worldwide | <a href="mailto:info@lasopatch.com">info@lasopatch.com</a></div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="Untitled_design-removebg-preview.png" alt="Laso Patch Logo" class="logo-img"> Laso<span class="logo-patch">Patch</span></a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="how-it-works.html" class="active">How It Works</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="signin.html" class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-lock"></i> Sign In
+                </a>
+                <a href="shop.html" class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+        <div class="container">
+            <h1>The Science of Nature</h1>
+            <p class="hero-subtitle">How Laso Patch Accelerates Healing</p>
+        </div>
+    </div>
+
+    <!-- Steps Section -->
+    <section class="section">
+        <div class="container">
+            
+            <div class="step-card">
+                <div class="step-image">
+                    <img src="clean wound.jpg" alt="Clean the wound">
+                </div>
+                <div class="step-content">
+                    <div class="step-number">01</div>
+                    <h3>Prepare the Area</h3>
+                    <p>Gently clean the wound or scrape with mild soap and water. Pat the area dry with a clean cloth. Ensuring the area is dry helps the natural adhesive stick perfectly to your skin.</p>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-image">
+                    <img src="apply lp.png" alt="Apply Laso Patch">
+                </div>
+                <div class="step-content">
+                    <div class="step-number">02</div>
+                    <h3>Apply the Patch</h3>
+                    <p>Peel the biodegradable backing off the Laso Patch. Center the herbal infusion pad over the wound and press the edges firmly onto your skin. The bamboo cellulose provides a flexible, breathable seal.</p>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-image">
+                    <img src="natural heal.png" alt="Natural Healing Process">
+                </div>
+                <div class="step-content">
+                    <div class="step-number">03</div>
+                    <h3>Let Nature Heal</h3>
+                    <p>Once applied, the combination of turmeric, neem, and aloe vera works immediately to reduce inflammation and prevent infection. The collagen infusion promotes faster cellular regeneration, significantly reducing scarring.</p>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-image">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Compost the Patch">
+                </div>
+                <div class="step-content">
+                    <div class="step-number">04</div>
+                    <h3>Compost After Use</h3>
+                    <p>When the wound is healed or you need to change the patch, gently peel it off. You can dispose of the Laso Patch directly in your compost bin, where it will fully biodegrade within a few weeks, leaving zero plastic waste.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-watermark">
+            <i class="fa-solid fa-leaf"></i>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo m-b-2" style="font-size: 1.5rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;"><img src="Untitled_design-removebg-preview.png" alt="Laso Patch Logo" class="logo-img"> Laso<span class="logo-patch">Patch</span></a>
+                    <p style="font-size: 0.9rem;">Nature's Healing Touch. Modernizing traditional wound care with organic, biodegradable materials.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fa-solid fa-envelope"></i> info@lasopatch.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> 120 Green Lane,<br>Eco City, IN 45578</p>
+                    
+                    <h4 class="m-t-2">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter Signup</h4>
+                    <p style="font-size: 0.9rem;">Join our community for natural healing tips and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Laso Patch. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Trademark</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

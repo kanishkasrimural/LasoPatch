@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Laso Patch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .shop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+        .product-card {
+            background-color: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(61, 90, 46, 0.05);
+            transition: var(--transition);
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(61, 90, 46, 0.1);
+        }
+        .product-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 1px solid rgba(61, 90, 46, 0.05);
+        }
+        .product-info {
+            padding: 2rem;
+            text-align: center;
+        }
+        .product-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .product-price {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+        .product-btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div><i class="fa-solid fa-leaf"></i> 100% Biodegradable & Natural Healing</div>
+            <div><i class="fa-solid fa-location-dot"></i> Available Worldwide | <a href="mailto:info@lasopatch.com">info@lasopatch.com</a></div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="Untitled_design-removebg-preview.png" alt="Laso Patch Logo" class="logo-img"> Laso<span class="logo-patch">Patch</span></a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="signin.html" class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-lock"></i> Sign In
+                </a>
+                <a href="shop.html" class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+        <div class="container">
+            <h1>Shop Laso Patch</h1>
+            <p class="hero-subtitle">Choose Your Natural Healing Solution</p>
+        </div>
+    </div>
+
+    <!-- Shop Grid -->
+    <section class="section">
+        <div class="container shop-grid">
+            
+            <div class="product-card">
+                <img src="Gemini_Generated_Image_f2mxc0f2mxc0f2mx (1),.png" alt="Standard Pack" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Standard Pack (20 Patches)</h3>
+                    <p>Perfect for everyday cuts and scrapes.</p>
+                    <div class="product-price">$12.99</div>
+                    <button class="btn btn-primary product-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="Gemini_Generated_Image_t7gowat7gowat7go,.png" alt="Family Variety Pack" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Family Variety Pack (50 Patches)</h3>
+                    <p>Assorted sizes for the whole family's needs.</p>
+                    <div class="product-price">$24.99</div>
+                    <button class="btn btn-primary product-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="Gemini_Generated_Image_r2oublr2oublr2ou.png" alt="Large Wound Pack" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Large Wound Pack (10 Patches)</h3>
+                    <p>Extra large coverage for significant scrapes.</p>
+                    <div class="product-price">$14.99</div>
+                    <button class="btn btn-primary product-btn">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-watermark">
+            <i class="fa-solid fa-leaf"></i>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo m-b-2" style="font-size: 1.5rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;"><img src="Untitled_design-removebg-preview.png" alt="Laso Patch Logo" class="logo-img"> Laso<span class="logo-patch">Patch</span></a>
+                    <p style="font-size: 0.9rem;">Nature's Healing Touch. Modernizing traditional wound care with organic, biodegradable materials.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fa-solid fa-envelope"></i> info@lasopatch.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> 120 Green Lane,<br>Eco City, IN 45578</p>
+                    
+                    <h4 class="m-t-2">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter Signup</h4>
+                    <p style="font-size: 0.9rem;">Join our community for natural healing tips and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Laso Patch. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Trademark</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
